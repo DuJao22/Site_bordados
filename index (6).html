@@ -1,0 +1,1111 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Inovação Bordados — Bordados Personalizados em Betim</title>
+  <meta name="description" content="Inovação Bordados — Bordados personalizados, uniformes e enxovais. Atendimento pelo WhatsApp: (31) 99398-8407." />
+  <meta name="theme-color" content="#8B5CF6" />
+  <link rel="icon" type="image/jpeg" href="attached_assets/stock_images/rede_globo_logo_icon_a55e11c4.jpg" />
+
+  <style>
+    /* ========================
+       RESET + BASE
+       ======================== */
+    :root {
+      --primary: #8B5CF6;
+      --primary-dark: #7C3AED;
+      --primary-light: #A78BFA;
+      --secondary: #EC4899;
+      --secondary-dark: #DB2777;
+      --secondary-light: #F472B6;
+      --accent: #06B6D4;
+      --accent-dark: #0891B2;
+      --accent-light: #22D3EE;
+      --success: #10B981;
+      --warning: #F59E0B;
+      --bg-light: #F9FAFB;
+      --bg-lighter: #FFFFFF;
+      --dark: #1F2937;
+      --dark-light: #374151;
+      --muted: #6B7280;
+      --muted-light: #9CA3AF;
+      --shadow-sm: 0 2px 8px rgba(139, 92, 246, 0.08);
+      --shadow-md: 0 4px 16px rgba(139, 92, 246, 0.12);
+      --shadow-lg: 0 8px 32px rgba(139, 92, 246, 0.16);
+      --shadow-color: 0 10px 40px rgba(139, 92, 246, 0.25);
+      --radius: 16px;
+      --max-w: 1100px;
+    }
+    
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+    
+    html, body {
+      height: 100%;
+      scroll-behavior: smooth;
+    }
+    
+    body {
+      font-family: Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+      color: var(--dark);
+      background: linear-gradient(135deg, #F0F9FF 0%, #FAF5FF 30%, #FDF4FF 60%, #FFF1F2 100%);
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+      line-height: 1.6;
+      font-size: 16px;
+    }
+    
+    .wrap {
+      width: 100%;
+      max-width: var(--max-w);
+      margin: 0 auto;
+      padding: 20px 16px;
+    }
+
+    /* ========================
+       HEADER
+       ======================== */
+    header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 16px;
+      margin-bottom: 24px;
+      flex-wrap: wrap;
+    }
+    
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      flex: 1;
+      min-width: 250px;
+    }
+    
+    .logo {
+      width: 64px;
+      height: 64px;
+      border-radius: 50%;
+      background: linear-gradient(135deg, #8B5CF6 0%, #EC4899 100%);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      box-shadow: var(--shadow-color);
+      border: 3px solid rgba(255, 255, 255, 0.8);
+      flex-shrink: 0;
+    }
+    
+    .logo .word {
+      font-family: "Brush Script MT", "Segoe Script", cursive;
+      color: #ffffff;
+      font-size: 18px;
+      line-height: 1;
+      font-weight: 700;
+    }
+    
+    .brand h1 {
+      font-size: clamp(16px, 4vw, 18px);
+      margin: 0;
+      font-weight: 700;
+    }
+    
+    .brand p {
+      margin: 0;
+      font-size: clamp(12px, 3vw, 13px);
+      color: var(--muted);
+    }
+
+    .header-actions {
+      display: flex;
+      gap: 8px;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+
+    /* ========================
+       BUTTONS
+       ======================== */
+    .btn {
+      border: 0;
+      cursor: pointer;
+      padding: 11px 16px;
+      border-radius: 10px;
+      font-weight: 600;
+      font-size: 14px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      text-decoration: none;
+      transition: all 0.2s ease;
+      white-space: nowrap;
+      min-height: 44px;
+    }
+    
+    .btn-whatsapp {
+      background: linear-gradient(135deg, #10B981 0%, #059669 100%);
+      color: white;
+      box-shadow: var(--shadow-md), 0 6px 20px rgba(16, 185, 129, 0.3);
+      font-weight: 600;
+    }
+    
+    .btn-whatsapp:hover {
+      transform: translateY(-3px);
+      box-shadow: var(--shadow-lg), 0 10px 30px rgba(16, 185, 129, 0.4);
+      background: linear-gradient(135deg, #34D399 0%, #10B981 100%);
+    }
+    
+    .btn-ig {
+      background: linear-gradient(135deg, #EC4899 0%, #DB2777 100%);
+      color: white;
+      border: 2px solid rgba(255, 255, 255, 0.3);
+      box-shadow: var(--shadow-md), 0 6px 20px rgba(236, 72, 153, 0.3);
+      font-weight: 600;
+    }
+    
+    .btn-ig:hover {
+      background: linear-gradient(135deg, #F472B6 0%, #EC4899 100%);
+      border-color: rgba(255, 255, 255, 0.5);
+      transform: translateY(-2px);
+      box-shadow: var(--shadow-lg), 0 10px 30px rgba(236, 72, 153, 0.4);
+    }
+
+    .ghost {
+      background: rgba(255, 255, 255, 0.7);
+      border: 2px solid var(--primary);
+      padding: 11px 16px;
+      border-radius: 10px;
+      color: var(--primary);
+      font-weight: 600;
+    }
+    
+    .ghost:hover {
+      background: linear-gradient(135deg, rgba(139, 92, 246, 0.1) 0%, rgba(236, 72, 153, 0.1) 100%);
+      border-color: var(--secondary);
+      transform: translateY(-2px);
+      box-shadow: var(--shadow-md);
+    }
+
+    /* ========================
+       HERO SECTION
+       ======================== */
+    .hero {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 24px;
+      background: linear-gradient(135deg, #FFFFFF 0%, #F5F3FF 50%, #FAF5FF 100%);
+      padding: 24px;
+      border-radius: 20px;
+      box-shadow: var(--shadow-color);
+      border: 2px solid rgba(139, 92, 246, 0.1);
+      margin-bottom: 32px;
+      position: relative;
+      overflow: hidden;
+    }
+    
+    .hero::before {
+      content: '';
+      position: absolute;
+      top: -50%;
+      right: -50%;
+      width: 200%;
+      height: 200%;
+      background: radial-gradient(circle, rgba(139, 92, 246, 0.05) 0%, transparent 70%);
+      pointer-events: none;
+    }
+    
+    .hero-left h2 {
+      margin: 0 0 12px 0;
+      font-size: clamp(20px, 5vw, 26px);
+      color: var(--dark);
+      line-height: 1.3;
+    }
+    
+    .eyebrow {
+      background: linear-gradient(135deg, var(--primary) 0%, var(--secondary) 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      font-weight: 800;
+      font-size: clamp(11px, 3vw, 13px);
+      display: inline-block;
+      margin-bottom: 8px;
+      letter-spacing: 0.5px;
+    }
+    
+    .hero-left p.lead {
+      margin: 0 0 20px 0;
+      font-size: clamp(14px, 3.5vw, 16px);
+      color: var(--muted);
+      line-height: 1.6;
+    }
+    
+    .kpis {
+      display: flex;
+      gap: 10px;
+      margin-bottom: 20px;
+      flex-wrap: wrap;
+    }
+    
+    .kpi {
+      background: linear-gradient(135deg, #FFFFFF 0%, #F5F3FF 100%);
+      padding: 10px 14px;
+      border-radius: 12px;
+      font-size: clamp(12px, 3vw, 13px);
+      color: var(--dark);
+      display: inline-flex;
+      gap: 8px;
+      align-items: center;
+      white-space: nowrap;
+      box-shadow: var(--shadow-md);
+      border: 2px solid rgba(139, 92, 246, 0.15);
+      font-weight: 600;
+    }
+    
+    .hero-ctas {
+      display: flex;
+      gap: 10px;
+      flex-wrap: wrap;
+    }
+
+    /* ========================
+       CONTACT CARD
+       ======================== */
+    .card {
+      background: linear-gradient(135deg, #FFFFFF 0%, #FDF4FF 100%);
+      padding: 20px;
+      border-radius: 18px;
+      box-shadow: var(--shadow-color);
+      border: 2px solid rgba(236, 72, 153, 0.1);
+    }
+    
+    .card h3 {
+      margin: 0 0 16px 0;
+      font-size: clamp(15px, 4vw, 17px);
+    }
+    
+    .contact-row {
+      display: flex;
+      gap: 12px;
+      align-items: flex-start;
+      margin-bottom: 14px;
+    }
+    
+    .contact-row .strong {
+      font-weight: 700;
+    }
+    
+    .small {
+      font-size: clamp(12px, 3vw, 13px);
+      color: var(--muted);
+    }
+    
+    .small-muted {
+      font-size: clamp(11px, 2.8vw, 12px);
+      color: var(--muted);
+    }
+
+    /* ========================
+       SECTIONS
+       ======================== */
+    section {
+      margin-top: 32px;
+    }
+    
+    section h3 {
+      margin: 0 0 16px 0;
+      font-size: clamp(18px, 4.5vw, 22px);
+    }
+    
+    .services {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 14px;
+    }
+    
+    .service {
+      background: linear-gradient(135deg, #FFFFFF 0%, #F0F9FF 100%);
+      padding: 18px;
+      border-radius: 16px;
+      min-height: 100px;
+      box-shadow: var(--shadow-md);
+      border: 2px solid rgba(6, 182, 212, 0.15);
+      transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+      position: relative;
+      overflow: hidden;
+    }
+    
+    .service::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 4px;
+      height: 100%;
+      background: linear-gradient(180deg, var(--accent) 0%, var(--primary) 100%);
+      opacity: 0;
+      transition: opacity 0.4s ease;
+    }
+    
+    .service:hover {
+      transform: translateY(-4px);
+      box-shadow: var(--shadow-color);
+      border-color: var(--accent);
+    }
+    
+    .service:hover::before {
+      opacity: 1;
+    }
+    
+    .service h4 {
+      margin: 0 0 10px 0;
+      font-size: clamp(15px, 4vw, 16px);
+    }
+    
+    .service p {
+      margin: 0;
+      line-height: 1.5;
+    }
+
+    /* ========================
+       PORTFOLIO
+       ======================== */
+    .portfolio {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 10px;
+    }
+    
+    .tile {
+      background: linear-gradient(135deg, #FFFFFF 0%, #FDF4FF 100%);
+      border-radius: 16px;
+      height: 120px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: var(--muted);
+      font-size: clamp(12px, 3vw, 13px);
+      border: 2px solid rgba(139, 92, 246, 0.15);
+      box-shadow: var(--shadow-md);
+      transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+      position: relative;
+      overflow: hidden;
+    }
+    
+    .tile::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(135deg, rgba(139, 92, 246, 0.1) 0%, rgba(236, 72, 153, 0.1) 100%);
+      opacity: 0;
+      transition: opacity 0.4s ease;
+    }
+    
+    .tile:hover {
+      transform: translateY(-4px) scale(1.02);
+      box-shadow: var(--shadow-color);
+      border-color: var(--secondary);
+    }
+    
+    .tile:hover::before {
+      opacity: 1;
+    }
+
+    /* ========================
+       TESTIMONIALS
+       ======================== */
+    .testimonials {
+      display: flex;
+      gap: 12px;
+      overflow-x: auto;
+      padding-bottom: 8px;
+      -webkit-overflow-scrolling: touch;
+      scrollbar-width: thin;
+    }
+    
+    .testimonial {
+      background: linear-gradient(135deg, #FFFFFF 0%, #FFFBEB 100%);
+      padding: 16px;
+      border-radius: 16px;
+      min-width: 260px;
+      box-shadow: var(--shadow-md);
+      border: 2px solid rgba(245, 158, 11, 0.15);
+      flex-shrink: 0;
+      transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    }
+    
+    .testimonial:hover {
+      transform: translateY(-4px);
+      box-shadow: var(--shadow-color);
+      border-color: var(--warning);
+    }
+    
+    .testimonial strong {
+      font-size: clamp(13px, 3.5vw, 14px);
+    }
+
+    /* ========================
+       FORM
+       ======================== */
+    .form-row {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 12px;
+      margin-bottom: 12px;
+    }
+    
+    .field {
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+      margin-bottom: 12px;
+    }
+    
+    .field label {
+      font-weight: 600;
+      font-size: clamp(13px, 3.5vw, 14px);
+    }
+    
+    input[type="text"],
+    input[type="tel"],
+    textarea {
+      padding: 12px 14px;
+      border-radius: 12px;
+      border: 2px solid rgba(139, 92, 246, 0.2);
+      background: linear-gradient(135deg, #FFFFFF 0%, #FAF5FF 100%);
+      font-size: clamp(14px, 3.5vw, 15px);
+      font-family: inherit;
+      width: 100%;
+      min-height: 44px;
+      transition: all 0.3s ease;
+    }
+    
+    input:hover,
+    textarea:hover {
+      border-color: var(--primary);
+      box-shadow: 0 0 0 3px rgba(139, 92, 246, 0.1);
+    }
+    
+    textarea {
+      min-height: 120px;
+      resize: vertical;
+    }
+    
+    input:focus,
+    textarea:focus {
+      outline: none;
+      border-color: var(--secondary);
+      box-shadow: 0 0 0 4px rgba(236, 72, 153, 0.15), var(--shadow-md);
+    }
+    
+    .form-actions {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      margin-top: 16px;
+    }
+
+    /* ========================
+       FOOTER
+       ======================== */
+    footer {
+      margin-top: 40px;
+      padding-top: 24px;
+      border-top: 3px solid;
+      border-image: linear-gradient(90deg, var(--primary) 0%, var(--secondary) 50%, var(--accent) 100%) 1;
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+      color: var(--muted);
+      font-size: clamp(12px, 3vw, 13px);
+    }
+    
+    footer strong {
+      color: var(--dark);
+    }
+    
+    .footer-actions {
+      display: flex;
+      gap: 10px;
+      flex-wrap: wrap;
+    }
+
+    /* ========================
+       RESPONSIVE - TABLET
+       ======================== */
+    @media (min-width: 600px) {
+      .wrap {
+        padding: 28px 24px;
+      }
+      
+      .logo {
+        width: 72px;
+        height: 72px;
+      }
+      
+      .logo .word {
+        font-size: 20px;
+      }
+      
+      .services {
+        grid-template-columns: repeat(2, 1fr);
+      }
+      
+      .portfolio {
+        grid-template-columns: repeat(3, 1fr);
+      }
+      
+      .form-row {
+        grid-template-columns: 1fr 1fr;
+      }
+      
+      footer {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+      }
+      
+      .form-actions {
+        flex-direction: row;
+        align-items: center;
+      }
+      
+      .form-actions .btn {
+        flex: 0 0 auto;
+      }
+    }
+
+    /* ========================
+       RESPONSIVE - DESKTOP
+       ======================== */
+    @media (min-width: 900px) {
+      .wrap {
+        padding: 32px;
+      }
+      
+      .hero {
+        grid-template-columns: 1fr 400px;
+        padding: 32px;
+      }
+      
+      .services {
+        grid-template-columns: repeat(3, 1fr);
+      }
+      
+      .portfolio {
+        grid-template-columns: repeat(4, 1fr);
+      }
+      
+      .testimonials {
+        overflow-x: visible;
+      }
+      
+      .testimonial {
+        min-width: 0;
+        flex: 1;
+      }
+    }
+
+    /* ========================
+       ACCESSIBILITY
+       ======================== */
+    a:focus,
+    button:focus,
+    input:focus,
+    textarea:focus {
+      outline: 3px solid rgba(139, 92, 246, 0.4);
+      outline-offset: 2px;
+    }
+    
+    @media (prefers-reduced-motion: reduce) {
+      * {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+      }
+      
+      html {
+        scroll-behavior: auto;
+      }
+    }
+
+    /* ========================
+       SCROLL TO TOP BUTTON
+       ======================== */
+    .scroll-to-top {
+      position: fixed;
+      bottom: 30px;
+      right: 30px;
+      width: 56px;
+      height: 56px;
+      background: linear-gradient(135deg, var(--primary) 0%, var(--secondary) 100%);
+      border: 3px solid rgba(255, 255, 255, 0.9);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      opacity: 0;
+      visibility: hidden;
+      transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+      box-shadow: var(--shadow-color);
+      z-index: 1000;
+      color: white;
+      font-size: 24px;
+      font-weight: bold;
+    }
+    
+    .scroll-to-top.visible {
+      opacity: 1;
+      visibility: visible;
+    }
+    
+    .scroll-to-top:hover {
+      transform: translateY(-5px) scale(1.1);
+      box-shadow: 0 12px 40px rgba(139, 92, 246, 0.35);
+      background: linear-gradient(135deg, var(--primary-light) 0%, var(--secondary-light) 100%);
+    }
+    
+    .scroll-to-top:active {
+      transform: translateY(-3px) scale(1.05);
+    }
+
+    /* ========================
+       SCROLL PROGRESS BAR
+       ======================== */
+    .scroll-progress {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 0%;
+      height: 4px;
+      background: linear-gradient(90deg, var(--primary) 0%, var(--secondary) 50%, var(--accent) 100%);
+      z-index: 9999;
+      transition: width 0.1s ease;
+      box-shadow: 0 2px 8px rgba(139, 92, 246, 0.3);
+    }
+
+    /* ========================
+       FADE IN ANIMATIONS
+       ======================== */
+    .fade-in {
+      opacity: 0;
+      transform: translateY(30px);
+      transition: opacity 0.6s ease, transform 0.6s ease;
+    }
+    
+    .fade-in.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+    
+    .fade-in-delay-1 {
+      transition-delay: 0.1s;
+    }
+    
+    .fade-in-delay-2 {
+      transition-delay: 0.2s;
+    }
+    
+    .fade-in-delay-3 {
+      transition-delay: 0.3s;
+    }
+
+    /* ========================
+       CREDITS
+       ======================== */
+    .credits-btn:hover {
+      transform: translateY(-3px) scale(1.05);
+      box-shadow: var(--shadow-lg), 0 10px 30px rgba(139, 92, 246, 0.4) !important;
+      background: linear-gradient(135deg, var(--primary-light) 0%, var(--secondary-light) 100%) !important;
+    }
+
+    /* ========================
+       PRINT STYLES
+       ======================== */
+    @media print {
+      .btn,
+      .header-actions,
+      .hero-ctas,
+      form {
+        display: none;
+      }
+    }
+  </style>
+</head>
+<body>
+  <!-- SCROLL PROGRESS BAR -->
+  <div class="scroll-progress" id="scrollProgress"></div>
+  
+  <!-- SCROLL TO TOP BUTTON -->
+  <button class="scroll-to-top" id="scrollToTop" aria-label="Voltar ao topo" title="Voltar ao topo">
+    ↑
+  </button>
+
+  <div class="wrap" role="main">
+
+    <!-- HEADER -->
+    <header>
+      <div class="brand" aria-label="Inovação Bordados - marca">
+        <div class="logo" aria-hidden="true">
+          <div style="text-align:center">
+            <div class="word">Inovação</div>
+            <div style="font-size:9px;color:#222;margin-top:-4px;font-family:Inter,Arial">Bordados</div>
+          </div>
+        </div>
+        <div>
+          <h1>Inovação Bordados</h1>
+          <p>Maria — Bordados personalizados em Betim</p>
+        </div>
+      </div>
+
+      <div class="header-actions">
+        <a class="btn btn-whatsapp" id="top-wa" href="#" title="Abrir WhatsApp">
+          <span>WhatsApp</span>
+        </a>
+        <a class="btn btn-ig" id="ig-link" target="_blank" rel="noopener" href="https://instagram.com/inovacaobordados">
+          Instagram
+        </a>
+      </div>
+    </header>
+
+    <!-- HERO -->
+    <section class="hero fade-in" aria-label="Apresentação Inovação Bordados">
+      <div class="hero-left">
+        <span class="eyebrow">Bordados personalizados • Uniformes • Enxovais</span>
+        <h2>Transforme suas peças com bordados profissionais e exclusivos</h2>
+        <p class="lead">
+          Na Inovação Bordados (Betim) criamos bordados com acabamento premium para uniformes, enxoval e produtos personalizados.
+          Atendimento rápido, prova digital e entregas com capricho. Peça já um orçamento via WhatsApp.
+        </p>
+
+        <div class="kpis">
+          <div class="kpi">✅ Atendimento WhatsApp</div>
+          <div class="kpi">🎯 Alta definição</div>
+          <div class="kpi">🚚 Entregas Betim</div>
+        </div>
+
+        <div class="hero-ctas">
+          <button class="btn btn-whatsapp" id="cta-wa">Pedir orçamento no WhatsApp</button>
+          <a class="btn ghost" href="#contato">Enviar mensagem</a>
+        </div>
+      </div>
+
+      <aside class="card" aria-labelledby="contato-rapido">
+        <h3 id="contato-rapido">Contato rápido</h3>
+
+        <div class="contact-row">
+          <div style="flex:1">
+            <div class="small">Telefone / WhatsApp</div>
+            <div class="strong" style="font-size:16px">(31) 99398-8407</div>
+          </div>
+        </div>
+
+        <div class="contact-row">
+          <div style="flex:1">
+            <div class="small">E-mail</div>
+            <div class="small-muted">inovacaobordados@gmail.com</div>
+          </div>
+        </div>
+
+        <div style="margin:12px 0">
+          <div class="small" style="margin-bottom:6px">Horário de atendimento</div>
+          <div class="small-muted">Seg — Sex: 09:00 — 18:00</div>
+        </div>
+
+        <div style="display:flex;gap:8px;margin-top:16px;flex-wrap:wrap">
+          <button class="btn btn-whatsapp" id="card-wa" style="flex:1;min-width:140px">Abrir WhatsApp</button>
+          <a class="btn btn-ig" href="https://instagram.com/inovacaobordados" target="_blank" rel="noopener" style="flex:1;min-width:120px">Ver Instagram</a>
+        </div>
+      </aside>
+    </section>
+
+    <!-- SERVICES -->
+    <section aria-label="Serviços" class="fade-in">
+      <h3>Nossos serviços</h3>
+      <div class="services" role="list">
+        <div class="service fade-in-delay-1" role="listitem">
+          <h4>Bordados Personalizados</h4>
+          <p class="small-muted">Logos, nomes, detalhes decorativos — acabamento fino para camisas, bonés e bolsas.</p>
+        </div>
+        <div class="service fade-in-delay-2" role="listitem">
+          <h4>Bordados para Uniformes</h4>
+          <p class="small-muted">Soluções para empresas, escolas e profissionais: bordado resistente e com excelente apresentação.</p>
+        </div>
+        <div class="service fade-in-delay-3" role="listitem">
+          <h4>Bordados em Enxoval</h4>
+          <p class="small-muted">Bordamos enxovais com delicadeza: fraldas, mantas, toalhas e peças especiais.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- PORTFÓLIO -->
+    <section aria-label="Portfólio" class="fade-in">
+      <h3>Portfólio rápido</h3>
+      <div class="portfolio">
+        <div class="tile">Exemplo 1</div>
+        <div class="tile">Exemplo 2</div>
+        <div class="tile">Exemplo 3</div>
+        <div class="tile">Exemplo 4</div>
+      </div>
+      <p class="small-muted" style="margin-top:12px">
+        Para ver mais trabalhos, visite nosso Instagram ou solicite fotos via WhatsApp.
+      </p>
+    </section>
+
+    <!-- TESTIMONIALS -->
+    <section aria-label="Depoimentos" class="fade-in">
+      <h3>O que clientes dizem</h3>
+      <div class="testimonials" role="list">
+        <div class="testimonial" role="listitem">
+          <strong>Larissa —</strong>
+          <p class="small-muted" style="margin:8px 0 0 0">"Entregaram rápido e o bordado ficou impecável. Recomendo!"</p>
+        </div>
+        <div class="testimonial" role="listitem">
+          <strong>Eduardo —</strong>
+          <p class="small-muted" style="margin:8px 0 0 0">"Profissionalismo e acabamento excelente nos uniformes da minha equipe."</p>
+        </div>
+        <div class="testimonial" role="listitem">
+          <strong>Sandra —</strong>
+          <p class="small-muted" style="margin:8px 0 0 0">"Atendimento cuidadoso e preço justo. Voltarei a fazer encomendas."</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT FORM -->
+    <section id="contato" aria-label="Contato" class="fade-in">
+      <h3>Peça seu orçamento</h3>
+      <p class="small-muted" style="margin:0 0 16px 0">Preencha os dados abaixo e clique em <strong>Pedir orçamento</strong> — abriremos o WhatsApp com sua mensagem pronta.</p>
+
+      <form id="contact-form" onsubmit="return handleSubmit(event)" novalidate>
+        <div class="form-row">
+          <div class="field">
+            <label for="name">Nome</label>
+            <input id="name" name="name" type="text" placeholder="Seu nome completo" required />
+          </div>
+          <div class="field">
+            <label for="phone">Telefone (WhatsApp)</label>
+            <input id="phone" name="phone" type="tel" placeholder="(31) 9xxxx-xxxx" required />
+          </div>
+        </div>
+
+        <div class="field">
+          <label for="service">Serviço desejado</label>
+          <input id="service" name="service" type="text" placeholder="Ex: Bordado em uniformes — 20 camisas" />
+        </div>
+
+        <div class="field">
+          <label for="message">Detalhes (tamanho, cores, quantidade)</label>
+          <textarea id="message" name="message" placeholder="Descreva o pedido (tecido, cores, quantidade)"></textarea>
+          <div class="small-muted">Nós enviaremos uma estimativa e condições via WhatsApp.</div>
+        </div>
+
+        <div class="form-actions">
+          <button type="submit" class="btn btn-whatsapp">Pedir orçamento</button>
+          <button type="button" class="btn ghost" id="email-btn">Enviar por e-mail</button>
+          <div style="flex:1"></div>
+          <div class="small-muted" style="text-align:right">Local: Betim — Atendimento rápido.</div>
+        </div>
+      </form>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+      <div>
+        <strong>Inovação Bordados</strong><br>
+        <span class="small-muted">Betim, MG • inovacaobordados@gmail.com • (31) 99398-8407</span>
+      </div>
+      <div class="footer-actions">
+        <a class="btn ghost" href="https://instagram.com/inovacaobordados" target="_blank" rel="noopener">Instagram</a>
+        <a class="btn btn-whatsapp" href="#" id="footer-wa">WhatsApp</a>
+      </div>
+    </footer>
+
+    <!-- CREDITS -->
+    <div style="margin-top: 32px; padding: 24px; background: linear-gradient(135deg, #FFFFFF 0%, #F5F3FF 100%); border-radius: 20px; box-shadow: var(--shadow-color); border: 2px solid rgba(139, 92, 246, 0.2); text-align: center;">
+      <div style="font-size: 12px; color: var(--muted); margin-bottom: 12px; font-weight: 600; letter-spacing: 1px; text-transform: uppercase;">
+        Desenvolvido por
+      </div>
+      <div style="font-size: 22px; font-weight: 800; margin-bottom: 8px;">
+        <span style="background: linear-gradient(135deg, var(--primary) 0%, var(--secondary) 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;">
+          João Layon
+        </span>
+      </div>
+      <div style="font-size: 14px; color: var(--muted-light); margin-bottom: 16px; font-weight: 600;">
+        Desenvolvedor Full Stack
+      </div>
+      <a href="https://dujao22.github.io/Apresentacao_Solucoes_Digitais-/" 
+         target="_blank" 
+         rel="noopener"
+         class="credits-btn"
+         style="display: inline-flex; align-items: center; gap: 8px; padding: 12px 24px; background: linear-gradient(135deg, var(--primary) 0%, var(--secondary) 100%); color: white; text-decoration: none; border-radius: 12px; font-weight: 600; font-size: 14px; box-shadow: var(--shadow-md), 0 6px 20px rgba(139, 92, 246, 0.3); transition: all 0.3s ease;">
+        <span>🚀</span>
+        <span>Ver Portfólio e Serviços</span>
+      </a>
+    </div>
+  </div>
+
+  <script>
+    /************************************************
+     * Configurações
+     ************************************************/
+    const PHONE_RAW = "+5531993988407";
+    const PHONE_DISPLAY = "(31) 99398-8407";
+    const IG_LINK = "https://instagram.com/inovacaobordados";
+    const EMAIL = "inovacaobordados@gmail.com";
+
+    function buildWhatsAppUrl(text) {
+      const base = "https://wa.me/" + PHONE_RAW.replace(/\D/g, '').replace(/^\+/, '');
+      return base + "?text=" + encodeURIComponent(text);
+    }
+
+    // Event listeners para WhatsApp
+    document.getElementById('top-wa').addEventListener('click', function(e) {
+      e.preventDefault();
+      const text = "Olá! Gostaria de um orçamento. Meu nome: ";
+      window.open(buildWhatsAppUrl(text), "_blank");
+    });
+
+    document.getElementById('cta-wa').addEventListener('click', function() {
+      const text = "Olá! Gostaria de um orçamento para bordado. Meu nome: ";
+      window.open(buildWhatsAppUrl(text), "_blank");
+    });
+
+    document.getElementById('card-wa').addEventListener('click', function() {
+      const text = "Olá Maria! Tenho interesse em bordados. Meu nome: ";
+      window.open(buildWhatsAppUrl(text), "_blank");
+    });
+
+    document.getElementById('footer-wa').addEventListener('click', function(e) {
+      e.preventDefault();
+      const text = "Olá! Vi a página e quero um orçamento. Meu nome: ";
+      window.open(buildWhatsAppUrl(text), "_blank");
+    });
+
+    // Instagram
+    document.getElementById('ig-link').href = IG_LINK;
+
+    // Form submit
+    function handleSubmit(e) {
+      e.preventDefault();
+      const name = document.getElementById('name').value.trim();
+      const phone = document.getElementById('phone').value.trim();
+      const service = document.getElementById('service').value.trim();
+      const message = document.getElementById('message').value.trim();
+
+      if (!name || !phone) {
+        alert("Por favor, preencha seu nome e telefone (WhatsApp).");
+        return false;
+      }
+
+      let text = `Olá Inovação Bordados! Tenho interesse em um orçamento.\n`;
+      text += `Nome: ${name}\n`;
+      text += `Telefone: ${phone}\n`;
+      if (service) text += `Serviço: ${service}\n`;
+      if (message) text += `Detalhes: ${message}\n`;
+      text += `\nObrigado!`;
+
+      const url = buildWhatsAppUrl(text);
+      window.open(url, "_blank");
+      return false;
+    }
+
+    // Email button
+    document.getElementById('email-btn').addEventListener('click', function() {
+      const name = document.getElementById('name').value.trim() || "[Seu nome]";
+      const service = document.getElementById('service').value.trim() || "[Serviço]";
+      const message = document.getElementById('message').value.trim() || "[Detalhes]";
+
+      const subject = encodeURIComponent("Pedido de orçamento - " + name);
+      const body = encodeURIComponent("Olá Maria,\n\nGostaria de um orçamento.\n\nNome: " + name + "\nServiço: " + service + "\nDetalhes: " + message + "\n\nObrigado.");
+      window.location.href = `mailto:${EMAIL}?subject=${subject}&body=${body}`;
+    });
+
+    // Smooth scroll para links internos
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function(e) {
+        const href = this.getAttribute('href');
+        if (href !== '#') {
+          e.preventDefault();
+          const target = document.querySelector(href);
+          if (target) {
+            target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+          }
+        }
+      });
+    });
+
+    /************************************************
+     * NOVAS FUNCIONALIDADES
+     ************************************************/
+    
+    // 1. SCROLL TO TOP BUTTON
+    const scrollToTopBtn = document.getElementById('scrollToTop');
+    
+    scrollToTopBtn.addEventListener('click', function() {
+      window.scrollTo({
+        top: 0,
+        behavior: 'smooth'
+      });
+    });
+    
+    // 2. SCROLL PROGRESS BAR
+    const scrollProgress = document.getElementById('scrollProgress');
+    
+    function updateScrollIndicators() {
+      const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+      const scrollHeight = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+      const scrollPercentage = (scrollTop / scrollHeight) * 100;
+      
+      // Update progress bar
+      scrollProgress.style.width = scrollPercentage + '%';
+      
+      // Show/hide scroll to top button
+      if (scrollTop > 300) {
+        scrollToTopBtn.classList.add('visible');
+      } else {
+        scrollToTopBtn.classList.remove('visible');
+      }
+    }
+    
+    // 3. FADE IN ON SCROLL ANIMATION
+    const fadeElements = document.querySelectorAll('.fade-in');
+    
+    function checkFadeIn() {
+      fadeElements.forEach(element => {
+        const elementTop = element.getBoundingClientRect().top;
+        const elementBottom = element.getBoundingClientRect().bottom;
+        const windowHeight = window.innerHeight;
+        
+        if (elementTop < windowHeight * 0.85 && elementBottom > 0) {
+          element.classList.add('visible');
+        }
+      });
+    }
+    
+    // Event listeners
+    window.addEventListener('scroll', function() {
+      updateScrollIndicators();
+      checkFadeIn();
+    });
+    
+    window.addEventListener('load', function() {
+      updateScrollIndicators();
+      checkFadeIn();
+    });
+    
+    // Initial check
+    updateScrollIndicators();
+    checkFadeIn();
+    
+    // 4. SMOOTH REVEAL ON PAGE LOAD
+    setTimeout(() => {
+      document.body.style.opacity = '1';
+    }, 100);
+  </script>
+</body>
+</html>
